@@ -1,0 +1,16 @@
+[tool.pylint.main]
+py-version = "3.10"
+fail-under = 8.5
+jobs = 0
+ignore-patterns = ["^notebooks/"]
+
+[tool.pylint.basic]
+good-names = ["i", "j", "k", "x", "y", "X", "y_true", "y_pred"]
+
+[tool.pylint.design]
+max-args = 7
+max-locals = 20
+max-branches = 15
+
+[tool.pylint."tests.*"]
+disable = ["missing-function-docstring"]
